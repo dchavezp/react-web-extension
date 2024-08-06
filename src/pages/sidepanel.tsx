@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import browser from "webextension-polyfill";
 import { useBrowserMessaging } from "../hooks/useBrowserMessaging";
-const SidebarPage = () => {
+const SidePanelPage = () => {
   const { sentMessage } = useBrowserMessaging();
   const [message, setMessage] = useState("");
   const [listMessages, setListMessages] = useState<
@@ -65,4 +65,4 @@ const SidebarPage = () => {
   );
 };
 
-export default SidebarPage;
+export default SidePanelPage;
